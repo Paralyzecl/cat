@@ -1,0 +1,180 @@
+li {
+    display: inline;
+}
+.bar {
+    list-style-type: none;
+    float: left;
+    display: block;
+    margin-right: 45px;
+}
+div.bar > ul {
+    display: flex;
+    gap: 20px;
+}
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 21px;
+    padding-bottom: 2.5%;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(123, 150, 152);
+    height: 7.8%;
+    border-radius: 4px;
+    padding: 5px 0px;
+}
+.hamburger-container {
+    padding: 8px 12px 6px 12px;
+    background-color: white;
+    border-radius: 14px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+a:visited,
+a:hover,
+a:link,
+a:active {
+    color: rgb(103, 111, 112);
+    text-decoration: none;
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+a.facebook,
+a.linkedin,
+a.youtube,
+a.twitter {
+    color: white;
+    background-color: rgb(68, 104, 227);
+    padding: 2px 16px 1px 16px;
+    margin: 0px;
+    margin-top: 60px;
+}
+a.linkedin {
+    background-color: rgb(57, 82, 140);
+}
+a.youtube {
+    background-color: rgb(178, 46, 15);
+}
+a.twitter {
+    background-color: rgb(68, 104, 227);
+}
+ul {
+    margin-right: 20px;
+}
+menu {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 92.2%;
+}
+div.leftmenu {
+    display: block;
+    background-color: rgb(167, 191, 193);
+    margin: 0px;
+    border: 0px;
+    width: 32.8%;
+    margin-left: 9%;
+    text-align: center;
+}
+a.tech,
+a.Wroc {
+    border: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+a.tech {
+    font-size: 64px;
+    color: rgb(56, 67, 68);
+}
+div.headline {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+a.Wroc {
+    color: white;
+    font-size: 20px;
+}
+
+div.darkbox {
+    padding-top: 30px;
+    padding-bottom: 220px;
+    background-color: rgb(56, 67, 68);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+div.darkbox1 {
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(56, 67, 68);
+}
+div.rightmenu {
+    width: 67.2%;
+    margin-bottom: 10.3%;
+}
+div.righttop {
+    margin-right: 10.8%;
+    margin-left: 1.4%;
+}
+hr {
+    border: none;
+    border-top: 2px dotted rgb(153, 153, 137);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+h2 {
+    margin-top: 3.3%;
+}
+div.rightbotmenu {
+    color: white;
+    text-align: right;
+    margin-right: 9%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(56, 67, 68);
+}
