@@ -1,180 +1,101 @@
-li {
-    display: inline;
+body{
+  margin:0px;
+  padding:0px;
+  border:0px;
 }
-.bar {
-    list-style-type: none;
-    float: left;
-    display: block;
-    margin-right: 45px;
+ul{
+  list-style-type: none;
+
 }
-div.bar > ul {
-    display: flex;
-    gap: 20px;
+.header >h1{font-size: 3em}
+#box{
+  height:100vh;
+  display:grid;
+  grid-template-columns:15% 70% 15%;
 }
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+.inbox{
+  background-image: url("paper.jpg");
+  background-size: 100% auto;
+  color:#262425;
+
 }
 
-body {
-    line-height: 1;
-    font-family: arial;
+.header{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-h1 {
-    font-size: 25px;
+#mainContent > h1{
+  align-content: center;
+  color:white;
 }
-
-h2 {
-    font-size: 21px;
-    padding-bottom: 2.5%;
+li{
+   font-size: 35px;
+   margin-top:10px;
 }
-
-h3 {
-    font-size: 18px;
+.lines{
+  background-image: url("2+3.png");
 }
-
-h4 {
-    font-size: 16px;
+.app{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
 }
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(123, 150, 152);
-    height: 7.8%;
-    border-radius: 4px;
-    padding: 5px 0px;
+.inputFile{
+  display:none;
 }
-.hamburger-container {
-    padding: 8px 12px 6px 12px;
-    background-color: white;
-    border-radius: 14px;
-    margin-right: 20px;
-    margin-bottom: 0px;
+label{
+  height: 100px;
+  width:100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  margin-bottom:10px;
+  font-size:100px;
+  background:lightskyblue;
+  cursor:pointer;
 }
-a:visited,
-a:hover,
-a:link,
-a:active {
-    color: rgb(103, 111, 112);
-    text-decoration: none;
-    background-color: white;
-    padding: 3px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
+.fileText{
+  margin-bottom:10px;
 }
-a.facebook,
-a.linkedin,
-a.youtube,
-a.twitter {
-    color: white;
-    background-color: rgb(68, 104, 227);
-    padding: 2px 16px 1px 16px;
-    margin: 0px;
-    margin-top: 60px;
+button{
+  padding: 20px 25px;
+  background:rgb(12,70,179);
+  color:whitesmoke;
+  border:none;
+  margin-bottom:10px;
+  cursor:pointer0;
+  font-size:20px;
+  font-weight:700;
 }
-a.linkedin {
-    background-color: rgb(57, 82, 140);
+.bat{
+  height:50px;
+  width:500px;
+  background: #80808073;
+  magin-bottom:10px;
 }
-a.youtube {
-    background-color: rgb(178, 46, 15);
+.progress{
+  background:linear-gradient(12eg,red,blue);
+  height: 100%;
+  width:0%;
 }
-a.twitter {
-    background-color: rgb(68, 104, 227);
+.uploadPercentage{
+  font-size:25px;
 }
-ul {
-    margin-right: 20px;
+.img{
+  height:200px;
+  width:auto;
+  ovject-fit:contain;
+  display:none;
+  border: 5px solid steelblue;
 }
-menu {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    height: 92.2%;
+.imageUploaded{
+  margin-top: 10px;
 }
-div.leftmenu {
-    display: block;
-    background-color: rgb(167, 191, 193);
-    margin: 0px;
-    border: 0px;
-    width: 32.8%;
-    margin-left: 9%;
-    text-align: center;
-}
-a.tech,
-a.Wroc {
-    border: 0px;
-    margin: 0px;
-    background-color: rgba(0, 0, 0, 0);
-}
-a.tech {
-    font-size: 64px;
-    color: rgb(56, 67, 68);
-}
-div.headline {
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-a.Wroc {
-    color: white;
-    font-size: 20px;
-}
-
-div.darkbox {
-    padding-top: 30px;
-    padding-bottom: 220px;
-    background-color: rgb(56, 67, 68);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: white;
-}
-div.darkbox1 {
-    padding-top: 0.8%;
-    padding-bottom: 0.8%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(56, 67, 68);
-}
-div.rightmenu {
-    width: 67.2%;
-    margin-bottom: 10.3%;
-}
-div.righttop {
-    margin-right: 10.8%;
-    margin-left: 1.4%;
-}
-hr {
-    border: none;
-    border-top: 2px dotted rgb(153, 153, 137);
-    color: #fff;
-    background-color: #fff;
-    height: 1px;
-    width: 100%;
-}
-h2 {
-    margin-top: 3.3%;
-}
-div.rightbotmenu {
-    color: white;
-    text-align: right;
-    margin-right: 9%;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgb(56, 67, 68);
+.app>p{
+  font-size: 2em;
 }
