@@ -1,126 +1,53 @@
 <!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Technologie internetowe: HTML i CSS</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="style.css">
+     
+     <title>Cat</title>
+</head>
+<body>
+<div id=box>
+     <div class=lines></div>
+     <div class=inbox>
+          
+              <div class=header><h1>Najciekawsze o kotach</h1></div>
+              <div class=facts>
+               <h1>Dzisiaj chciałbym przedstawić Wam ciekawostki i fakty na temat jednych z najpopularniejszych zwierząt domowych na świecie - kotów.</h1>
+               <ul>
+                    <li>Koty są naturalnie sprinterami i potrafią skoczyć aż osiem razy swoją długość ciała. To pozwala im na łatwe dostanie się do trudno dostępnych miejsc, takich jak półki i parapety.</li>
+                    <li>Koty są jednymi z najstarszych zwierząt domowych, które pierwotnie pochodzą z Egiptu, gdzie były uwielbiane jako bogowie. Egipcjanie czcili koty jako symbole czystości i mądrości, a zabicie kota było karalne.</li>
+                    <li>Koty są również jednymi z nielicznych ssaków, które nie produkują enzymu potrzebnego do rozkładania laktozy, co oznacza, że nie mogą trawić mleka dorosłych. Dlatego też, jeśli chcesz karmić swojego kota mlekiem, najlepiej jest wybrać mleko specjalnie przeznaczone dla kotów.</li>
+                    <li>Koty posiadają zmysł powonienia 10 razy silniejszy niż człowiek. Jest to jeden z powodów, dlaczego koty tak bardzo lubią się drapać - gruczoły w skórze wydzielają feromony, które pozostawiają zapach i oznaczają terytorium.</li>
+                    <li>Koty są także jednymi z nielicznych zwierząt, które potrafią mruczeć. Mruczenie jest uważane za oznakę zadowolenia i relaksu. Koty mruczą nie tylko wtedy, gdy są zadowolone, ale również, gdy są zdenerwowane lub boją się.</li>
+                    <li>Koty mają unikalne linie papilarnych, tak jak ludzie, co oznacza, że każdy kot ma inny odcisk palca.</li>
+                    <li>Koty posiadają specjalne gruczoły w skórze, które wydzielają feromony, które służą do oznaczania terytorium i komunikacji z innymi kotami. Feromony te pozwalają kotom na rozpoznanie innych kotów i na określenie, czy są one przyjacielskie czy wrogie.</li>
+                    <li>Koty są również znane ze swojej inteligencji i zdolności do uczenia się. Mogą one być nauczone różnych sztuczek, takich jak aportowanie piłki lub chodzenie na smyczy.</li>
+               </ul>
+               <h1 class="podsumowanie">Ogólnie rzecz biorąc, koty to fascynujące i wspaniałe zwierzęta, które zasługują na naszą uwagę i szacunek. Dzięki swoim unikalnym cechom i zdolnościom, koty są nie tylko naszymi przyjaciółmi, ale również niezwykłymi istotami, które warto poznać.</h1>
+               </div>
+          <div class=app><p>SPRAWDZARKA</p>
 
-    <body>
-        <!-- <div class="hamburger-container">
-            <div class="hamburger-bar"></div>
-            <div class="hamburger-bar"></div>
-            <div class="hamburger-bar"></div>
-        </div> -->
-        <header>
-            <div class="hamburger-container">
-                <img
-                    src="./icons8-menu-32.svg"
-                    width="24"
-                    height="24"
-                    alt="hamburger"
-                />
-            </div>
+<input type="file" class="inputFile" id="fileInp" onchange="getFile(event)" accept="image/png"/>
+<label for="fileInp">+</label>
+<span class="fileText"></span>
+<button onclick="uploadImage()">PRZEKAZ PLIK</button>
+<div class="bar">
+     <div class="progress"></div>
+</div>
+<div class="uploadPercentage">0%</div>
 
-            <div class="bar">
-                <ul>
-                    <li><a href="">Zasady</a></li>
-                    <li><a href="">Wprowadzenie</a></li>
-                    <li><a href="">Poczta internetowa</a></li>
-                    <li><a href="">Bezpieczeństwo</a></li>
-                    <li><a href="">HTML i CSS</a></li>
-                    <li><a href="">Dynamiczne WWW</a></li>
-                </ul>
-            </div>
+<div class="imageUploaded">
+     <img alt="" class="img"/>
+</div>
 
-            <div class="socbar">
-                <a class="facebook" href="">f</a>
-                <a class="linkedin" href="">in</a>
-                <a class="youtube" href="">y</a>
-                <a class="twitter" href="">t</a>
-            </div>
-        </header>
-        <menu>
-            <div class="leftmenu">
-                <div class="headline">
-                    <a class="tech" href="">Technologie internetowe</a>
-                </div>
-                <div class="darkbox">HTML tutorial</div>
-                <div class="darkbox">CSS tutorial</div>
 
-                <div class="darkbox1">
-                    <a class="Wroc" href=""
-                        >&#9650;&nbsp;Wróć do&nbsp;góry&nbsp;&#9650;</a
-                    >
-                </div>
-            </div>
-            <div class="rightmenu">
-                <div class="righttop">
-                    <div>
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Mauris consectetur tellus quam, nec sodales
-                            leo imperdiet id. Vivamus quis hendrerit sem. Etiam
-                            bibendum lacus nec urna lacinia sollicitudin. Aenean
-                            cursus posuere diam nec congue. Sed est orci,
-                            venenatis facilisis nibh tempor, ullamcorper mattis
-                            lectus. Cras blandit vel sem ac bibendum. Cras a
-                            magna et libero gravida malesuada eget ut metus.
-                            Aliquam erat volutpat. Maecenas placerat mauris id
-                            mauris dictum, at vulputate sapien aliquam. Vivamus
-                            sed nibh fringilla, sagittis augue sed, feugiat dui.
-                            Interdum et malesuada fames ac ante ipsum primis in
-                            faucibus. Maecenas eu metus molestie, sollicitudin
-                            neque sed, luctus risus. Nulla vitae mi velit.
-                            Suspendisse dapibus, orci nec molestie pharetra,
-                            lectus justo pharetra arcu, et elementum lectus odio
-                            a augue.
-                        </p>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Nullam non blandit dui</h2>
-                        <p>
-                            Nullam non blandit dui. Fusce blandit eleifend eros
-                            ac porta. Aenean ac ligula non mi tempor pharetra.
-                            Etiam a odio vel dolor dignissim vehicula. Class
-                            aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos. Nulla tempus
-                            enim ac mi porttitor, nec pulvinar dui dapibus.
-                            Maecenas iaculis porta scelerisque.
-                        </p>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>
-                            Morbi sodales sollicitudin mauris posuere finibus
-                        </h2>
-                        <p>
-                            Morbi sodales sollicitudin mauris posuere finibus.
-                            Nam pellentesque in quam iaculis condimentum. Donec
-                            sem metus, placerat vitae nisi ut, aliquam aliquet
-                            lorem. Vestibulum velit arcu, rutrum sit amet
-                            iaculis sed, rhoncus vel ex. Aenean leo urna,
-                            tristique nec semper laoreet, consectetur ac lorem.
-                            Integer pellentesque, lectus vitae finibus
-                            vulputate, metus ipsum facilisis elit, quis volutpat
-                            enim dolor a dolor. Integer eu tellus bibendum,
-                            lobortis nunc in, consequat nunc. Morbi porttitor
-                            congue nunc, a posuere augue consectetur at. Vivamus
-                            tristique, dui at ornare laoreet, arcu lectus
-                            placerat turpis, vel tincidunt lorem est nec libero.
-                            Fusce fermentum lectus mauris, ut lobortis neque
-                            vestibulum id.
-                        </p>
-                        <hr />
-                    </div>
-                </div>
-                <div class="rightbotmenu">
-                    <p>Technologie internetowe WMI UAM</p>
-                </div>
-            </div>
-        </menu>
-    </body>
+     
+</div>
+</div>
+<div class=lines></div>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
